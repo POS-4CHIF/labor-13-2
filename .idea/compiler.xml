@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="labor-13-2" />
+        <module name="JPA_Template" />
+        <module name="labor-12-1" />
+        <module name="JPA_Example" />
+        <module name="JPA_Test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="12" />
+  </component>
+</project>
