@@ -26,19 +26,19 @@ public class Rental {
     @Column(name = "rental_returnDate")
     private LocalDate returnDate;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "rental_rental_station_id", nullable = false)
     private Station rentalStation;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "rental_return_station_id")
     private Station returnStation;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "rental_registration_nr", nullable = false)
     private Car car;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "rental_customer_number")
     private Customer driver;
 

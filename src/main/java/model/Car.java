@@ -22,11 +22,11 @@ public class Car {
     @Column(name = "car_model")
     private String model;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "car_station_id")
     private Station location;
 
-    @OneToMany(mappedBy = "car", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "car", cascade = CascadeType.MERGE)
     private List<Rental> rentals;
 
     public Car() {

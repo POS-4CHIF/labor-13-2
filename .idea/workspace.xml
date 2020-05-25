@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48064b77-a412-4e63-9e7c-5755d441345d" name="Default Changelist" comment="" />
+    <list default="true" id="48064b77-a412-4e63-9e7c-5755d441345d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/db/DAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db/DAOTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DAOTest.testLongRun4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DAOTest.testInsertRental" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="labor-13-2" />
       <extension name="coverage">
         <pattern>
@@ -100,13 +106,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="db" />
       <option name="MAIN_CLASS_NAME" value="db.DAOTest" />
-      <option name="METHOD_NAME" value="testLongRun4" />
+      <option name="METHOD_NAME" value="testInsertRental" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DAOTest.testTotalDistance2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DAOTest.testInsertStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="labor-13-2" />
       <extension name="coverage">
         <pattern>
@@ -116,13 +122,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="db" />
       <option name="MAIN_CLASS_NAME" value="db.DAOTest" />
-      <option name="METHOD_NAME" value="testTotalDistance2" />
+      <option name="METHOD_NAME" value="testInsertStation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DAOTest.testTotalDistance3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DAOTest.testInsertStation2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="labor-13-2" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +138,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="db" />
       <option name="MAIN_CLASS_NAME" value="db.DAOTest" />
-      <option name="METHOD_NAME" value="testTotalDistance3" />
+      <option name="METHOD_NAME" value="testInsertStation2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,10 +163,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DAOTest" />
+        <item itemvalue="JUnit.DAOTest.testInsertStation2" />
+        <item itemvalue="JUnit.DAOTest.testInsertRental" />
+        <item itemvalue="JUnit.DAOTest.testInsertStation" />
         <item itemvalue="JUnit.DAOTest.testTotalDistance4" />
-        <item itemvalue="JUnit.DAOTest.testTotalDistance3" />
-        <item itemvalue="JUnit.DAOTest.testTotalDistance2" />
-        <item itemvalue="JUnit.DAOTest.testLongRun4" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +207,9 @@
       <workItem from="1589121534629" duration="1087000" />
       <workItem from="1589193923732" duration="58000" />
       <workItem from="1589194049093" duration="794000" />
-      <workItem from="1589195561247" duration="12914000" />
+      <workItem from="1589195561247" duration="13008000" />
+      <workItem from="1590385761082" duration="5246000" />
+      <workItem from="1590392301899" duration="476000" />
     </task>
     <servers />
   </component>
@@ -274,34 +282,34 @@
     </state>
     <state x="740" y="336" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584450660526" />
     <state x="740" y="322" width="424" height="511" key="FileChooserDialogImpl/0.28.1920.1016@0.28.1920.1016" timestamp="1584606418193" />
-    <state width="2468" height="323" key="GridCell.Tab.0.bottom" timestamp="1589207768155">
+    <state width="2468" height="210" key="GridCell.Tab.0.bottom" timestamp="1590392786071">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state width="910" height="134" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588003826332" />
     <state width="1877" height="407" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1584532784787" />
     <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.28.1920.1016@0.28.1920.1016" timestamp="1585580402354" />
-    <state width="2468" height="323" key="GridCell.Tab.0.bottom/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1589207768155" />
-    <state width="2468" height="323" key="GridCell.Tab.0.center" timestamp="1589207768155">
+    <state width="2468" height="210" key="GridCell.Tab.0.bottom/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1590392786071" />
+    <state width="2468" height="210" key="GridCell.Tab.0.center" timestamp="1590392786071">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state width="910" height="134" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588003826329" />
     <state width="1877" height="407" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1584532784787" />
     <state width="1874" height="315" key="GridCell.Tab.0.center/0.28.1920.1016@0.28.1920.1016" timestamp="1585580402352" />
-    <state width="2468" height="323" key="GridCell.Tab.0.center/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1589207768155" />
-    <state width="2468" height="323" key="GridCell.Tab.0.left" timestamp="1589207768155">
+    <state width="2468" height="210" key="GridCell.Tab.0.center/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1590392786071" />
+    <state width="2468" height="210" key="GridCell.Tab.0.left" timestamp="1590392786071">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state width="910" height="134" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588003826327" />
     <state width="1877" height="407" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1584532784787" />
     <state width="1874" height="315" key="GridCell.Tab.0.left/0.28.1920.1016@0.28.1920.1016" timestamp="1585580402350" />
-    <state width="2468" height="323" key="GridCell.Tab.0.left/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1589207768155" />
-    <state width="2468" height="323" key="GridCell.Tab.0.right" timestamp="1589207768155">
+    <state width="2468" height="210" key="GridCell.Tab.0.left/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1590392786071" />
+    <state width="2468" height="210" key="GridCell.Tab.0.right" timestamp="1590392786071">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state width="910" height="134" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588003826330" />
     <state width="1877" height="407" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1584532784787" />
     <state width="1874" height="315" key="GridCell.Tab.0.right/0.28.1920.1016@0.28.1920.1016" timestamp="1585580402353" />
-    <state width="2468" height="323" key="GridCell.Tab.0.right/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1589207768155" />
+    <state width="2468" height="210" key="GridCell.Tab.0.right/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1590392786071" />
     <state x="490" y="236" key="Maven.ArtifactSearchDialog" timestamp="1584370267172">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -315,10 +323,10 @@
       <screen x="0" y="28" width="1920" height="1016" />
     </state>
     <state x="734" y="268" width="442" height="533" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.28.1920.1016@0.28.1920.1016" timestamp="1584615211618" />
-    <state x="2868" y="164" width="710" height="783" key="find.popup" timestamp="1589207509606">
+    <state x="2868" y="164" width="710" height="783" key="find.popup" timestamp="1590389913150">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
-    <state x="2868" y="164" width="710" height="783" key="find.popup/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1589207509606" />
+    <state x="2868" y="164" width="710" height="783" key="find.popup/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1590389913150" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1589198971099">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
@@ -331,11 +339,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="143" y="237" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588002971394" />
-    <state x="2751" y="237" width="896" height="721" key="search.everywhere.popup" timestamp="1589205908953">
+    <state x="2751" y="237" width="896" height="721" key="search.everywhere.popup" timestamp="1590389223421">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state x="623" y="237" width="672" height="721" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588000652988" />
     <state x="623" y="251" width="672" height="678" key="search.everywhere.popup/0.28.1920.1016@0.28.1920.1016" timestamp="1585578197726" />
-    <state x="2751" y="237" width="896" height="721" key="search.everywhere.popup/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1589205908953" />
+    <state x="2751" y="237" width="896" height="721" key="search.everywhere.popup/1920.0.2560.1080/1920.1080.1920.1080/0.32.1920.1048@1920.0.2560.1080" timestamp="1590389223421" />
   </component>
 </project>

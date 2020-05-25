@@ -49,19 +49,27 @@ public class DAO implements AutoCloseable {
 
         Rental r1 = new Rental(80, LocalDate.of(2020, 5, 1), LocalDate.of(2020, 5, 2), krems, wien, c3, koenig);
         Rental r2 = new Rental(25, LocalDate.of(2020, 5, 2), LocalDate.of(2020, 5, 3), stp, krems, c4, hoelzl);
-        Rental r3 = new Rental(90, LocalDate.of(2020, 5, 3), LocalDate.of(2020, 5, 3), wien, stp, c5, zach);
-        Rental r4 = new Rental(null, LocalDate.of(2020, 05, 04), null, krems, null, c6, koenig);
+        Rental r3 = new Rental(90, LocalDate.of(2020, 5, 3), LocalDate.of(2020, 5, 3), wien, stp, c5, koenig);
+        Rental r4 = new Rental(null, LocalDate.of(2020, 05, 04), null, krems, null, c6, zach);
         Rental r5 = new Rental(null, LocalDate.of(2020, 05, 05), null, stp, null, c6, hoelzl);
 
 
         EntityManager em = JPAUtil.getEMF().createEntityManager();
         EntityTransaction tx = em.getTransaction();
         try {
-            // customers, stations and cards 3-6 are being persisted implicitly by cascades
             tx.begin();
-
+            em.persist(koenig);
+            em.persist(hoelzl);
+            em.persist(zach);
+            em.persist(krems);
+            em.persist(wien);
+            em.persist(stp);
             em.persist(c1);
             em.persist(c2);
+            em.persist(c3);
+            em.persist(c4);
+            em.persist(c5);
+            em.persist(c6);
             em.persist(c7);
             em.persist(c8);
             em.persist(c9);
@@ -169,9 +177,38 @@ public class DAO implements AutoCloseable {
         }
     }
 
+    public Customer findCustomer(int customerNumber) {
+        EntityManager em = JPAUtil.getEMF().createEntityManager();
+        TypedQuery<Customer> q = em.createQuery("select c from Customer c where customerNumber = :cn", Customer.class);
+        q.setParameter("cn", customerNumber);
+        Customer result = q.getSingleResult();
+        em.close();
+        return result;
+    }
+
+    public Car findCar(String registrationNr) {
+        EntityManager em = JPAUtil.getEMF().createEntityManager();
+        TypedQuery<Car> q = em.createQuery("select c from Car c where registrationNr = :rn", Car.class);
+        q.setParameter("rn", registrationNr);
+        Car result = q.getSingleResult();
+        em.close();
+        return result;
+    }
+
+    public Station findStationByCity(String city) {
+        EntityManager em = JPAUtil.getEMF().createEntityManager();
+        TypedQuery<Station> q = em.createQuery("select s from Station s where city = :city", Station.class);
+        q.setParameter("city", city);
+        Station result = q.getSingleResult();
+        em.close();
+        return result;
+    }
+
     // Liefert eine Liste aller Fahrzeuge, die in der Station st
     // verfügbar sind.
     public List<Car> findCarsByStation(Station station) {
+        if (station == null) throw new IllegalArgumentException("Station must not be null");
+
         EntityManager em = JPAUtil.getEMF().createEntityManager();
         TypedQuery<Car> q = em.createQuery("select c from Car c where c.location = :station", Car.class);
         q.setParameter("station", station);
@@ -184,12 +221,10 @@ public class DAO implements AutoCloseable {
     // getätigt hat.
     public List<Rental> findRentalsByCustomer(Customer c) {
         if (c == null) throw new IllegalArgumentException("Customer must not be null");
-        Integer cn = c.getCustomerNumber();
-        if (cn == null) throw new IllegalArgumentException("customerNumber must not be null");
 
         EntityManager em = JPAUtil.getEMF().createEntityManager();
-        TypedQuery<Rental> q = em.createQuery("select r from Rental r where r.driver = :cn", Rental.class);
-        q.setParameter("cn", cn);
+        TypedQuery<Rental> q = em.createQuery("select r from Rental r where r.driver = :c", Rental.class);
+        q.setParameter("c", c);
         List<Rental> result = q.getResultList();
         em.close();
         return result;
